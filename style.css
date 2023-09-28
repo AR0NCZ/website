@@ -288,3 +288,29 @@ span{
 .btn-box.btns a::before{
     background: var(--second-bg-color);
 }
+
+.waterguns1{
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.waterguns .waterguns1 figure{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5rem;
+}
+
+.waterguns .waterguns1 figure img{
+    border-radius: 25%;
+}
+
+.btn-box.gun{
+    width: 63%;
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 18rem;
+}
