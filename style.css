@@ -314,3 +314,53 @@ span{
     margin-top: 6rem;
     margin-left: 18rem;
 }
+
+.contact{
+    background: var(--second-bg-color);
+}
+
+.contact-sci{
+    position: absolute;
+    bottom: -210rem;
+    right: 90rem;
+    width: 100px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.contact-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact-sci a:hover {
+    color: var(--bg-color);
+}
+
+.contact-sci a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact-sci a:hover::before {
+    width: 100%;
+}
